@@ -52,16 +52,40 @@ class Sheep(Animal):
         print(f'Шерсть пострижена у {self.name}')
 
 
-class Chiken(Goose):
-    pass
+class Chiken(Animal):
+
+    def voice(self):
+        print(f'{self.name} сказал(а): {self.sound}')
+
+    def collect(self):
+        print(f'Яйца собраны у {self.name}')
+
+    def feed(self):
+        print(f'{self.name} покормлен(а)')
 
 
-class Goat(Cow):
-    pass
+class Goat(Animal):
+
+    def voice(self):
+        print(f'{self.name} сказал(а): {self.sound}')
+
+    def feed(self):
+        print(f'{self.name} покормлен(а)')
+
+    def collect(self):
+        print(f'Молоко подоено у {self.name}')
 
 
-class Duck(Goose):
-    pass
+class Duck(Animal):
+
+    def voice(self):
+        print(f'{self.name} сказал(а): {self.sound}')
+
+    def collect(self):
+        print(f'Яйца собраны у {self.name}')
+
+    def feed(self):
+        print(f'{self.name} покормлен(а)')
 
 animals = [Goose('Серый', 5, 'га-га-га'), Goose('Белый', 3, 'га-га-га'), Cow('Манька', 100, 'му-му'), Sheep('Барашек', 10, 'бе-бе'), Sheep('Кудрявый', 20, 'бе-бе'), Chiken('Ко-Ко', 1.5, 'ку-ка-реку'), Chiken('Кукареку', 1, 'ку-ка-реку'), Goat('Рога', 5, 'ме-ме'), Goat('Копыта', 6, 'ме-ме'), Duck('Кряква', 4, 'кря-кря')]
 total_weight = 0
